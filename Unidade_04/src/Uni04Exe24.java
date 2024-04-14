@@ -22,15 +22,14 @@ se opção = 3, escreva os 3 valores de forma que o maior valor fique no meio */
         System.out.println("opção 3, escreva os 3 valores de forma que o maior valor fique no meio");
 
         byte ordem = input.nextByte();
+        int a = 10;
 
         input.close();
-
-        boolean 
 
         switch (ordem) {
 
             case 1:
-                do ()
+                do (a => 10) {
 
             
             
@@ -52,6 +51,7 @@ se opção = 3, escreva os 3 valores de forma que o maior valor fique no meio */
             case 3:
 
                 break;
+            } while (a)
         }
     }
 }

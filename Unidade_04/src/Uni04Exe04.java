@@ -5,13 +5,15 @@ public class Uni04Exe04 {
 
         Scanner input = new Scanner(System.in);
 
-        int numero1 = input.nextInt();
-        int numero2 = input.nextInt();
+        System.out.println("Digite um numero:");
+        double numero = input.nextInt();
 
-        if (numero1 > numero2) {
-            System.out.println("O primeiro numero é maior");
+        String numeroPorExtenco = String.valueOf(numero);
+
+        if (numeroPorExtenco.contains(".")) {
+            System.out.println("Foram digitados numeros apos a virgula.");
         } else {
-            System.out.println("O segundo numero é maior");
+            System.out.println("Foram digitados numeros apos a virgula.");
         }
 
         input.close();
