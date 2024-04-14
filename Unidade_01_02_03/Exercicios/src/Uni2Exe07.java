@@ -6,10 +6,9 @@ public class Uni2Exe07 {
 
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
-        double salarionormal, extra;
-        // String funcionario;
 
-        // funcionario = input.nextLine();
+        double salarionormal, extra;
+
         salarionormal = input.nextDouble();
         extra = input.nextDouble();
 

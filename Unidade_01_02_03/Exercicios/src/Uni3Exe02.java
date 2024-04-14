@@ -1,19 +1,17 @@
-
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Uni3Exe02 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
 
-        double ValorInicial = input.nextDouble();
+        double valorInicial = input.nextDouble();
 
-        double ValorDescontado = ValorInicial * 0.12;
-        double ValorFinal = ValorDescontado - ValorInicial;
+        double valorDescontado = valorInicial * 0.12;
+        double valorFinal = valorDescontado - valorInicial;
 
-        System.out.println(" O valor do desconto é de R$ " + ValorDescontado);
-        System.out.println(" O preço do par de sapatos com desconto é R$ " + ValorFinal);
+        System.out.println(" O valor do desconto é de R$ " + valorDescontado);
+        System.out.println(" O preço do par de sapatos com desconto é R$ " + valorFinal);
 
         input.close();
     }

@@ -1,20 +1,17 @@
-
-import java.io.IOException;
 import java.util.Scanner;
 
 /*°F = (9/5) °C + 32 */
 
 public class Uni3Exe11 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
-        double Celsius = input.nextDouble();
+        double celsius = input.nextDouble();
 
-        double Farenheit = ((9 / 5) * Celsius) + 32;
+        double farenheit = 9.0 / 5 * celsius + 32;
 
-        System.out.println(Farenheit);
-
+        System.out.println(farenheit);
 
         input.close();
     }

@@ -8,14 +8,14 @@ public class Uni2Exe10 {
 
         Scanner input = new Scanner(System.in);
 
-        int TempoDecorrido = input.nextInt();
-        int Horas = TempoDecorrido / 3600;
-        TempoDecorrido -= Horas * 3600;
-        int Minutos = TempoDecorrido / 60;
-        TempoDecorrido -= Minutos * 60;
-        int Segundos = TempoDecorrido;
+        int tempoDecorrido = input.nextInt();
+        int horas = tempoDecorrido / 3600;
+        tempoDecorrido -= horas * 3600;
+        int minutos = tempoDecorrido / 60;
+        tempoDecorrido -= minutos * 60;
+        int segundos = tempoDecorrido;
 
-        System.out.println(Horas + ":" + Minutos + ":" + Segundos);
+        System.out.println(horas + ":" + minutos + ":" + segundos);
 
         input.close();
     }

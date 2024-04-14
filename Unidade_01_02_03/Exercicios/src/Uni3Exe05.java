@@ -1,18 +1,16 @@
-
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Uni3Exe05 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
 
-        int NumeroFrangos = input.nextInt();
+        int numeroFrangos = input.nextInt();
 
-        double ValorPorFrango1 = NumeroFrangos * 4.0;
-        double ValorPorFrango2 = ValorPorFrango1 * 7.0;
+        double valorPorFrango1 = numeroFrangos * 4.0;
+        double valorPorFrango2 = valorPorFrango1 * 7.0;
 
-        System.out.println(ValorPorFrango2);
+        System.out.println(valorPorFrango2);
 
         input.close();
     }
