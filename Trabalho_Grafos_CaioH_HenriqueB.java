@@ -104,31 +104,7 @@ public class Grafo {
         return sb.toString();
     }
 
-    public static String buscaEmProfundidadeRecursiva(int[][] matriz) {
-        int n = matriz.length;
-        boolean[] visitado = new boolean[n];
-        List<Integer> ordem = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            if (!visitado[i]) {
-                dfs(i, matriz, visitado, ordem);
-            }
-        }
-
-        return "Ordem de visita (DFS recursiva): " + ordem;
-    }
-
-    private static void dfs(int v, int[][] matriz, boolean[] visitado, List<Integer> ordem) {
-        visitado[v] = true;
-        ordem.add(v);
-        for (int i = 0; i < matriz.length; i++) {
-            if (matriz[v][i] > 0 && !visitado[i]) {
-                dfs(i, matriz, visitado, ordem);
-            }
-        }
-    }
-
-    public static String buscaEmProfundidadeIterativa(int[][] matriz) {
+    public static String buscaEmProfundidade(int[][] matriz) {
         int n = matriz.length;
         boolean[] visitado = new boolean[n];
         List<Integer> ordem = new ArrayList<>();
@@ -152,7 +128,7 @@ public class Grafo {
             }
         }
 
-        return "Ordem de visita (DFS iterativa): " + ordem;
+        return "Ordem de visita : " + ordem;
     }
 
     public static void main(String[] args) {
@@ -166,8 +142,8 @@ public class Grafo {
         System.out.println("Tipo do Grafo: " + tipoDoGrafo(matriz));
         System.out.println(arestasDoGrafo(matriz));
         System.out.println(grausDoVertice(matriz));
-        System.out.println(buscaEmProfundidadeRecursiva(matriz));
-        System.out.println(buscaEmProfundidadeIterativa(matriz));
+        System.out.println(buscaEmProfundidade(matriz));
     }
 }
+
 
